@@ -1,0 +1,17 @@
+dispatch:
+  # Default service serves the typical web resources and all static resources.
+  #- url: "*/favicon.ico"
+  #  service: default
+
+  # Default service serves simple hostname request.
+  - url: "the-email-service.appspot.com/"
+    service: default
+
+  # Send all api traffic to the api service
+  - url: "*/api/*"
+    service: api
+    
+  # Send all private-api traffic to the api service
+  - url: "*/private-api/*"
+    service: api
+    
