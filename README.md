@@ -86,7 +86,7 @@ Due to the synchronous nature of the worker, scheduled emails are pulled first a
 
 Given the average response time of 3rd-party email services api is ~1s:
 
-| pending emails in 1 cycle | incremental delay |
+| pending emails in 1 cycle | incremental delay to other scheduled emails |
 | ------------- | ------------- |
 | 60 | ~1 min |
 | 120 | ~2 mins |
